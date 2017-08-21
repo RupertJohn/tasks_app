@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application that tracks tasks.
 
-Things you may want to cover:
+It is primarily to display the use of a RESTful framework that persists data in a database and provides CRUD functionality.
 
-* Ruby version
+Challenge from Pair Columbus:
+https://github.com/paircolumbus/TasksApp
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+http://paircolumbus.org/
