@@ -9,11 +9,30 @@ class ListsController < ApplicationController
   end
 
   def create
-    @list = List.create(list_params)
+    @list = List.new(list_params)
+
+    if @list.save
+      redirect_to lists_path
+    else
+      render :new
+    end
   end
 
   def show
-    @list = List.find(list_params)
+    @list = List.find(params[:id])
   end
+
+  def destroy
+    @list = List.find(params[:id])
+    @list.destroy
+
+    redirect_to lists_path
+  end
+
+  private
+
+    def list_params
+      params.require(:list).permit(:name)
+    end
 
 end
