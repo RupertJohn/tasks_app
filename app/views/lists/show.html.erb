@@ -11,5 +11,6 @@
   <%= f.label :submit %>
   <%= f.submit :submit %>
 <% end %>
-
+<%= link_to "Delete", list_path(@list), method: :delete %>
+<br />
 <%= link_to "Home", lists_path %>
