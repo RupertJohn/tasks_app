@@ -20,6 +20,8 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
+    @tasks = @list.tasks
+    @task = Task.new
   end
 
   def destroy
